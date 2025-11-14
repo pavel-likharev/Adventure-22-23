@@ -171,6 +171,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: tileBrickB_small (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 80fb62eacd5e9a041b717403c04b2dac, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -269,11 +273,11 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: -10
+  near clip plane: -20
   far clip plane: 1000
   field of view: 55.1
   orthographic: 1
-  orthographic size: 7
+  orthographic size: 9
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -298,7 +302,7 @@ Transform:
   m_GameObject: {fileID: 68255403}
   serializedVersion: 2
   m_LocalRotation: {x: 0.42260224, y: -0.0036879932, z: 0.00790893, w: 0.90627325}
-  m_LocalPosition: {x: 9, y: 2, z: -12}
+  m_LocalPosition: {x: -7, y: 2, z: -12}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -524,6 +528,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: tileBrickB_small (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 80fb62eacd5e9a041b717403c04b2dac, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -614,6 +622,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 79fb3c96de6fc8543bb6852cde00ce36, type: 3}
       propertyPath: m_Name
       value: tileBrickB_large
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 79fb3c96de6fc8543bb6852cde00ce36, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -919,6 +931,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: tileBrickB_small (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 80fb62eacd5e9a041b717403c04b2dac, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1010,6 +1026,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: tileBrickB_large (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 79fb3c96de6fc8543bb6852cde00ce36, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1100,6 +1120,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 79fb3c96de6fc8543bb6852cde00ce36, type: 3}
       propertyPath: m_Name
       value: tileBrickB_large (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 79fb3c96de6fc8543bb6852cde00ce36, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1565,6 +1589,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: tileBrickB_large (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 79fb3c96de6fc8543bb6852cde00ce36, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1855,6 +1883,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: tileBrickB_largeCrackedB (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 275c805af0f4b8e4e86639d1cd9076b5, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1892,8 +1924,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 6, y: 1.4080868, z: 6}
-  m_Center: {x: 0, y: 0.7040434, z: 0}
+  m_Size: {x: 6, y: 1, z: 6}
+  m_Center: {x: 0, y: 0.5, z: 0}
 --- !u!1001 &643958668
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1945,6 +1977,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 80fb62eacd5e9a041b717403c04b2dac, type: 3}
       propertyPath: m_Name
       value: tileBrickB_small (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 80fb62eacd5e9a041b717403c04b2dac, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2219,6 +2255,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: tileBrickB_small (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 80fb62eacd5e9a041b717403c04b2dac, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2309,6 +2349,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 79fb3c96de6fc8543bb6852cde00ce36, type: 3}
       propertyPath: m_Name
       value: tileBrickB_large (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 79fb3c96de6fc8543bb6852cde00ce36, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2401,6 +2445,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: tileBrickB_small (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 80fb62eacd5e9a041b717403c04b2dac, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2491,6 +2539,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 80fb62eacd5e9a041b717403c04b2dac, type: 3}
       propertyPath: m_Name
       value: tileBrickB_small (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 80fb62eacd5e9a041b717403c04b2dac, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2947,6 +2999,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: tileBrickB_largeCrackedA (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0dbf71b61896b0e4db6b1798ac6e27eb, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3220,6 +3276,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: tileBrickB_largeCrackedA
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0dbf71b61896b0e4db6b1798ac6e27eb, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3311,6 +3371,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: tileBrickB_small (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 80fb62eacd5e9a041b717403c04b2dac, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3360,7 +3424,7 @@ GameObject:
   m_Component:
   - component: {fileID: 936655939}
   - component: {fileID: 936655941}
-  - component: {fileID: 936655940}
+  - component: {fileID: 936655942}
   m_Layer: 0
   m_Name: PlayerCharacter
   m_TagString: Untagged
@@ -3377,7 +3441,7 @@ Transform:
   m_GameObject: {fileID: 936655938}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8, y: 1, z: -13}
+  m_LocalPosition: {x: -8, y: 1, z: -13}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3385,7 +3449,21 @@ Transform:
   - {fileID: 283826881}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!143 &936655940
+--- !u!114 &936655941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 936655938}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63a73f66973d14c4391df01fab8df125, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Character
+  _moveSpeed: 8
+  _rotationSpeed: 10
+--- !u!143 &936655942
 CharacterController:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3410,20 +3488,6 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 1, z: 0}
---- !u!114 &936655941
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 936655938}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 63a73f66973d14c4391df01fab8df125, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Character
-  _moveSpeed: 8
-  _rotationSpeed: 12
 --- !u!1001 &942666979
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3479,6 +3543,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: d9c821495d160dd41aa745927f7b04c2, type: 3}
       propertyPath: m_Name
       value: tileSpikes_large
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d9c821495d160dd41aa745927f7b04c2, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3571,6 +3639,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 80fb62eacd5e9a041b717403c04b2dac, type: 3}
       propertyPath: m_Name
       value: tileBrickB_small (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 80fb62eacd5e9a041b717403c04b2dac, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3673,8 +3745,8 @@ MonoBehaviour:
     CustomLookAtTarget: 0
   Lens:
     FieldOfView: 55.1
-    OrthographicSize: 7
-    NearClipPlane: -10
+    OrthographicSize: 9
+    NearClipPlane: -20
     FarClipPlane: 1000
     Dutch: 1
     ModeOverride: 0
@@ -3700,7 +3772,7 @@ Transform:
   m_GameObject: {fileID: 957398543}
   serializedVersion: 2
   m_LocalRotation: {x: 0.42261827, y: 0, z: 0, w: 0.9063079}
-  m_LocalPosition: {x: 9, y: 2, z: -12}
+  m_LocalPosition: {x: -7, y: 2, z: -12}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3758,10 +3830,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barbarian
       objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: 924a1418f6958814fa44a14967c3fc36, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 68748235bec36024dad20c9de22a2c87, type: 2}
+    - target: {fileID: 5866666021909216657, guid: 924a1418f6958814fa44a14967c3fc36, type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 924a1418f6958814fa44a14967c3fc36, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1341495425}
   m_SourcePrefab: {fileID: 100100000, guid: 924a1418f6958814fa44a14967c3fc36, type: 3}
 --- !u!4 &963664100 stripped
 Transform:
@@ -3819,6 +3902,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 79fb3c96de6fc8543bb6852cde00ce36, type: 3}
       propertyPath: m_Name
       value: tileBrickB_large (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 79fb3c96de6fc8543bb6852cde00ce36, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3910,6 +3997,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 80fb62eacd5e9a041b717403c04b2dac, type: 3}
       propertyPath: m_Name
       value: tileBrickB_small (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 80fb62eacd5e9a041b717403c04b2dac, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4184,6 +4275,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 79fb3c96de6fc8543bb6852cde00ce36, type: 3}
       propertyPath: m_Name
       value: tileBrickB_large (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 79fb3c96de6fc8543bb6852cde00ce36, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4463,6 +4558,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: tileBrickB_large (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 79fb3c96de6fc8543bb6852cde00ce36, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4553,6 +4652,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 79fb3c96de6fc8543bb6852cde00ce36, type: 3}
       propertyPath: m_Name
       value: tileBrickB_large (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 79fb3c96de6fc8543bb6852cde00ce36, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4645,6 +4748,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: tileBrickB_large (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 79fb3c96de6fc8543bb6852cde00ce36, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4735,6 +4842,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 79fb3c96de6fc8543bb6852cde00ce36, type: 3}
       propertyPath: m_Name
       value: tileBrickB_large (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 79fb3c96de6fc8543bb6852cde00ce36, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4843,6 +4954,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: tileBrickB_largeCrackedB
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 275c805af0f4b8e4e86639d1cd9076b5, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4880,8 +4995,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 6, y: 1.4080868, z: 6}
-  m_Center: {x: 0, y: 0.7040434, z: 0}
+  m_Size: {x: 6, y: 1, z: 6}
+  m_Center: {x: 0, y: 0.5, z: 0}
 --- !u!1001 &1198193106
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5246,6 +5361,24 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.750036, y: 4, z: 2.7499666}
   m_Center: {x: 0.62498254, y: 2, z: 0.6249831}
+--- !u!1 &1341495423 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 924a1418f6958814fa44a14967c3fc36, type: 3}
+  m_PrefabInstance: {fileID: 963664099}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1341495425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1341495423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37c0998e16cb77847a9154c17703e22d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CharacterView
+  _character: {fileID: 936655941}
 --- !u!1001 &1345695749
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5367,8 +5500,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InputExample
   _character: {fileID: 936655941}
-  _enemy: {fileID: 0}
-  _agentCharacter: {fileID: 0}
 --- !u!4 &1354287367
 Transform:
   m_ObjectHideFlags: 0
@@ -5378,7 +5509,7 @@ Transform:
   m_GameObject: {fileID: 1354287365}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 12.16469, y: 5, z: -10.39888}
+  m_LocalPosition: {x: 0, y: 5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5435,6 +5566,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 79fb3c96de6fc8543bb6852cde00ce36, type: 3}
       propertyPath: m_Name
       value: tileBrickB_large (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 79fb3c96de6fc8543bb6852cde00ce36, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5526,6 +5661,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 80fb62eacd5e9a041b717403c04b2dac, type: 3}
       propertyPath: m_Name
       value: tileBrickB_small
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 80fb62eacd5e9a041b717403c04b2dac, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5982,6 +6121,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: tileBrickB_largeCrackedA (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0dbf71b61896b0e4db6b1798ac6e27eb, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6072,6 +6215,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 80fb62eacd5e9a041b717403c04b2dac, type: 3}
       propertyPath: m_Name
       value: tileBrickB_small (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 80fb62eacd5e9a041b717403c04b2dac, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6254,6 +6401,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 80fb62eacd5e9a041b717403c04b2dac, type: 3}
       propertyPath: m_Name
       value: tileBrickB_small (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 80fb62eacd5e9a041b717403c04b2dac, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6485,7 +6636,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1814605442}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6597,6 +6748,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 80fb62eacd5e9a041b717403c04b2dac, type: 3}
       propertyPath: m_Name
       value: tileBrickB_small (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 80fb62eacd5e9a041b717403c04b2dac, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6974,6 +7129,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: tileBrickB_large (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 79fb3c96de6fc8543bb6852cde00ce36, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7065,6 +7224,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: tileBrickB_large (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 79fb3c96de6fc8543bb6852cde00ce36, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7155,6 +7318,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 79fb3c96de6fc8543bb6852cde00ce36, type: 3}
       propertyPath: m_Name
       value: tileBrickB_large (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 79fb3c96de6fc8543bb6852cde00ce36, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7263,6 +7430,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: tileBrickB_largeCrackedB (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 275c805af0f4b8e4e86639d1cd9076b5, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7300,8 +7471,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 6, y: 1.4080868, z: 6}
-  m_Center: {x: 0, y: 0.7040434, z: 0}
+  m_Size: {x: 6, y: 1, z: 6}
+  m_Center: {x: 0, y: 0.5, z: 0}
 --- !u!1001 &1939827584
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7444,6 +7615,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 79fb3c96de6fc8543bb6852cde00ce36, type: 3}
       propertyPath: m_Name
       value: tileBrickB_large (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 79fb3c96de6fc8543bb6852cde00ce36, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7626,6 +7801,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 79fb3c96de6fc8543bb6852cde00ce36, type: 3}
       propertyPath: m_Name
       value: tileBrickB_large (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 79fb3c96de6fc8543bb6852cde00ce36, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7991,6 +8170,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: tileBrickB_small (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 80fb62eacd5e9a041b717403c04b2dac, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8038,5 +8221,5 @@ SceneRoots:
   - {fileID: 1845982593}
   - {fileID: 1858657408}
   - {fileID: 936655939}
-  - {fileID: 957398546}
   - {fileID: 1354287367}
+  - {fileID: 957398546}

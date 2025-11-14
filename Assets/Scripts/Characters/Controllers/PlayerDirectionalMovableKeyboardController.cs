@@ -1,10 +1,10 @@
 using UnityEngine;
 
-public class PlayerDirectionalMovableController : Controller
+public class PlayerDirectionalMovableKeyboardController : Controller
 {
     private IDirectionalMovable _movable;
 
-    public PlayerDirectionalMovableController(IDirectionalMovable movable)
+    public PlayerDirectionalMovableKeyboardController(IDirectionalMovable movable)
     {
         _movable = movable;
     }

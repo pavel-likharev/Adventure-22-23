@@ -6,6 +6,7 @@ public class DirectionalRotator
     private float _rotationSpeed;
 
     private Vector3 _ñurrentDirection;
+    private Vector3 _lastValidDirection;
 
     public Quaternion CurrentRotation => _transform.rotation;
 
@@ -19,14 +20,13 @@ public class DirectionalRotator
 
     public void Update(float deltaTime)
     {
-        if (_ñurrentDirection.magnitude < 0.05f)
+            _lastValidDirection = _ñurrentDirection.normalized;
+        if (_ñurrentDirection.magnitude < 0.01f)
             return;
 
-        Quaternion lookRotation = Quaternion.LookRotation(_ñurrentDirection.normalized);
+        Quaternion lookRotation = Quaternion.LookRotation(_lastValidDirection);
         float _step = _rotationSpeed * deltaTime;
+        _transform.rotation = Quaternion.Slerp(_transform.rotation, lookRotation, _step);
 
-
-
-        _transform.localRotation = Quaternion.Lerp(_transform.localRotation, lookRotation, _step);
     }
 }

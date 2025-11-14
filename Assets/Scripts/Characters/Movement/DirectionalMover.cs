@@ -7,6 +7,8 @@ public class DirectionalMover
 
     private Vector3 _currentDirection;
 
+    public Vector3 Direction => _currentDirection;
+
     public Vector3 CurrentVelocity { get; private set; }
 
     public DirectionalMover(CharacterController characterController, float moveSpeed)

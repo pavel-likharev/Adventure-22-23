@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.AI;
 
 public class Character : MonoBehaviour, IDirectionalMovable, IDirectionalRotatable
 {
@@ -13,10 +14,14 @@ public class Character : MonoBehaviour, IDirectionalMovable, IDirectionalRotatab
 
     public Vector3 Position => transform.position;
 
+    //private NavMeshPath _pathToTarget;
+
     private void Awake()
     {
         _mover = new(GetComponent<CharacterController>(), _moveSpeed);
         _rotator = new(transform, _rotationSpeed);
+
+      //  _pathToTarget = new NavMeshPath();
     }
 
     private void Update()
@@ -28,4 +33,6 @@ public class Character : MonoBehaviour, IDirectionalMovable, IDirectionalRotatab
     public void SetMoveDirection(Vector3 inputDirection) => _mover.SetCurrentDirection(inputDirection);
 
     public void SetRotationDirection(Vector3 inputDirection) => _rotator.SetCurrentDirection(inputDirection);
+
+
 }
