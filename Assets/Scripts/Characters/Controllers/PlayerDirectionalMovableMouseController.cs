@@ -1,10 +1,8 @@
 using UnityEngine;
 using UnityEngine.AI;
-using UnityEngine.TextCore.Text;
 
 public class PlayerDirectionalMovableMouseController : Controller
 {
-
     private const int MinCornersCountInPathToMove = 2;
     private const int StartCornerIndex = 0;
     private const int TargetCornerIndex = 1;
@@ -14,7 +12,6 @@ public class PlayerDirectionalMovableMouseController : Controller
     private LayerMask _groundLayerMask = 6;
 
     private NavMeshQueryFilter _queryFilter;
-
     private NavMeshPath _pathToTarget = new NavMeshPath();
 
     private bool _isMoving = false;
@@ -29,10 +26,13 @@ public class PlayerDirectionalMovableMouseController : Controller
     protected override void UpdateLogic(float deltaTime)
     {
         if (Input.GetMouseButtonDown(0))
-        {
             DetectGroundWithMouse();
-        }
 
+        Move();
+    }
+
+    private void Move()
+    {
         if (_isMoving == false)
             return;
 
@@ -42,7 +42,6 @@ public class PlayerDirectionalMovableMouseController : Controller
 
             if (IsTargetReached(distanceToTarget))
             {
-                Debug.Log(_target);
                 _isMoving = false;
                 _movable.SetMoveDirection(Vector3.zero);
                 return;
@@ -51,9 +50,7 @@ public class PlayerDirectionalMovableMouseController : Controller
             if (EnoughCornersInPath(_pathToTarget))
             {
                 _movable.SetMoveDirection(_pathToTarget.corners[TargetCornerIndex] - _pathToTarget.corners[StartCornerIndex]);
-                return;
             }
-
         }
     }
 
@@ -61,43 +58,27 @@ public class PlayerDirectionalMovableMouseController : Controller
     {
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
-        if (Physics.Raycast(ray, out RaycastHit hitInfo))
-        {
+        if (Physics.Raycast(ray, out RaycastHit hitInfo, Mathf.Infinity, ~0, QueryTriggerInteraction.Ignore))
             if(hitInfo.collider.gameObject.layer == _groundLayerMask)
-                {
-                    Debug.Log(hitInfo.point);
                     OnGroundClicked(hitInfo);
-                }
-                else
-                    Debug.Log("Клик не по земле");
-        }
-        else
-        {
-            Debug.Log("Ничего не попало");
-        }
     }
 
     private void OnGroundClicked(RaycastHit hit)
     {
-        // Ваш код при клике по земле
-        // Например: перемещение персонажа, построение здания и т.д.
         _target = hit.point;
         _isMoving = true;
 
-        // Визуализация точки попадания (опционально)
         CreateHitMarker(hit.point);
     }
     private bool IsTargetReached(float distanceToTarget) => distanceToTarget <= 0.2f;
     private bool EnoughCornersInPath(NavMeshPath path) => _pathToTarget.corners.Length >= MinCornersCountInPathToMove;
     private void CreateHitMarker(Vector3 position)
     {
-        // Создаем временный объект для визуализации точки попадания
         GameObject marker = GameObject.CreatePrimitive(PrimitiveType.Sphere);
         marker.transform.position = position + Vector3.up * 0.1f;
-        marker.transform.localScale = Vector3.one * 1f;
+        marker.transform.localScale = Vector3.one * 0.5f;
         marker.GetComponent<Renderer>().material.color = Color.red;
 
-        // Удаляем через 2 секунды
-        GameObject.Destroy(marker, 0.5f);
+        GameObject.Destroy(marker, 0.3f);
     }
 }

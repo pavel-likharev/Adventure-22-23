@@ -10,6 +10,7 @@ public class DirectionalMover
     public Vector3 Direction => _currentDirection;
 
     public Vector3 CurrentVelocity { get; private set; }
+    public float CurrentVelocity2 => _characterController.velocity.magnitude;
 
     public DirectionalMover(CharacterController characterController, float moveSpeed)
     {
@@ -22,6 +23,7 @@ public class DirectionalMover
     public void Update(float deltaTime)
     {
         CurrentVelocity = _currentDirection.normalized * _moveSpeed * deltaTime;
+
         _characterController.Move(CurrentVelocity);
     }
 }

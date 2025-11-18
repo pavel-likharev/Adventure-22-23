@@ -2,21 +2,25 @@ using UnityEngine;
 
 public class CharacterView : MonoBehaviour
 {
-    private readonly int IsRunningKey = Animator.StringToHash("IsRunning");
+    private readonly int IsMovingKey = Animator.StringToHash("IsMoving");
 
-    private Animator animator;
+    private Animator _animator;
 
     [SerializeField] private Character _character;
 
     private void Awake()
     {
-        animator = GetComponent<Animator>();
+        _animator = GetComponent<Animator>();
     }
 
     private void Update()
     {
-        Running(_character.CurrentVelocity.magnitude > 0.02f);
+        Running(_character.CurrentVelocity.magnitude > 0.05f);
     }
 
-    private void Running(bool isRunning) => animator.SetBool(IsRunningKey, isRunning);
+    private void Running(bool isRunning)
+    {
+        //_animator.SetBool(IsMovingKey, isRunning);
+        _animator.SetFloat("Velocity", _character.CurrentVelocity2);
+    }
 }
