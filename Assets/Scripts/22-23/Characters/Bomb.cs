@@ -4,12 +4,13 @@ public class Bomb : MonoBehaviour
 {
     private DamageEffect _damageEffect;
     private ExplosionEffect _explosionEffect;
+    private Timer _timer;
 
     [SerializeField] private int _damageValue;
     [SerializeField] private float _radius;
     [SerializeField] private float _timeToExplotion;
     [SerializeField] private MeshRenderer _bombView;
-    private float _timer;
+    //private float _timer;
 
     private bool _isLaunch;
 
@@ -19,16 +20,17 @@ public class Bomb : MonoBehaviour
     {
         _damageEffect = new(_damageValue);
         _explosionEffect = new(_damageEffect, _radius);
+
+        _timer = new(this);
     }
 
     private void Update()
     {
         if (_isLaunch)
         {
-            _timer -= Time.deltaTime;
-
-            if (_timer < 0)
+            if (_timer.InProcess(out float elapsedTime) == false)
             {
+                Debug.Log(elapsedTime);
                 _explosionEffect.Execute(transform.position);
                 Destroy(gameObject);
             }
@@ -39,8 +41,10 @@ public class Bomb : MonoBehaviour
     {
         if (other.TryGetComponent(out IDamagable damagable))
         {
+            Debug.Log("in trigger bomb");
             _bombView.material.color = Color.red;
-            _timer = _timeToExplotion;        
+            //_timer = _timeToExplotion;        
+            _timer.StartProcess(_timeToExplotion);
             _isLaunch = true;
             GetComponent<Collider>().enabled = false;
         }

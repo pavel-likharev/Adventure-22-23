@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.AI;
 
-public class AgentCharacterController : Controller
+public class AgentAgroCharacterController : Controller
 {
     private AgentCharacter _agentCharacter;
 
@@ -15,7 +15,7 @@ public class AgentCharacterController : Controller
 
     private NavMeshPath _pathToTarget = new NavMeshPath();
 
-    public AgentCharacterController(
+    public AgentAgroCharacterController(
         AgentCharacter agentCharacter, 
         Transform target, 
         float agroRange, 

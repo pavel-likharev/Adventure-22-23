@@ -22,6 +22,7 @@ public class AgentCharacter : MonoBehaviour, IDirectionalMovable, IDirectionalRo
     private void Awake()
     {
         _agent = GetComponent<NavMeshAgent>();
+
         _agent.updateRotation = false;
 
         _rotator = new(transform, _rotationSpeed);

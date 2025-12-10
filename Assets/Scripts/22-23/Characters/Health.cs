@@ -17,6 +17,14 @@ public class Health
         _currentValue = value;
     }
 
+    public void AddValue(int value)
+    {
+        _currentValue += value;
+
+        if (_currentValue >= _maxValue)
+            _currentValue = _maxValue;
+    }
+
     public void TakeDamage(int damageValue)
     {
         if (damageValue < 0)
